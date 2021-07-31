@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1240px) {
+    html { font-size: 55.5%; }
+}
+
+@media only screen and (max-width: 1200px) {
+    html { font-size: 52.5%;}
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    html { font-size: 46%;}
+    
+    header { height: 95vh; }
+    .nav-menu ul { margin-right: 26rem; }
+    .hero-buttons { margin-left: 2rem; padding-top: 5rem; }
+
+    .section-about { padding: 1rem 0 19rem 0; }
+    .about-content { margin-top: -78rem; }
+
+    /* .section-pizza { padding: 16rem 0 18rem 0; } */
+    .section-pizza { padding: 15rem 0 24rem 0; }
+    .pizza-heading { margin: -53rem 0 0 51rem; }
+    .pizza-content h4 { font-size: 3rem; }
+    .pizza-content h4:not(:first-child) { padding-top: 4rem; }
+    .pizza-img { margin-left: 79.85rem; }
+    .pizza-btn { top: 45rem; }
+
+    .section-drinks { padding: 15rem 0 17rem 0; }
+    .drink-heading { margin: -56rem 0 0 39rem; }
+    .drink-img { height: 58vh; }
+    .drink-content h4 { font-size: 3rem; }
+    .drink-btn { top: 55rem; }
+
+    /* .section-reserv { height: 60vh; } */
+    .section-reserv { height: 80vh; }
+    .btn-form { margin-left: 48rem; }
+
+    .footer span { font-size: 1.8rem; }
+}
+
+@media only screen and (max-width: 992px) {
+    html { font-size: 42%; }
+
+    header { height: 90vh; }
+    .heading { font-size: 6rem; }
+
+    .hero-buttons { margin-left: 5rem; padding-top: 7rem; }
+
+    .section-about { padding: 1rem 0 19rem 0; }
+
+    .nav-menu ul { margin-right: 31rem; }
+    .nav-menu ul li { margin: .5rem 2.3rem; }
+
+    .section-pizza { padding: 17rem 0 28rem 0; }
+    .pizza-heading { margin: -55rem 0 0 57rem; }
+    .pizza-content h4:not(:first-child) { padding-top: 5rem; }
+    .pizza-img { width: 76%; }
+    .pizza-btn { top: 51rem; }
+
+    .section-drinks { padding: 12rem 0 20rem 0; }
+    .drink-heading { margin: -56rem 0 0 47rem; }
+    .drink-content h4 { font-size: 3rem; padding-top: 4rem; }
+    .drink-btn { top: 66rem; }
+}
+
+@media only screen and (max-width: 768px) {
+    html { font-size: 35%; }
+    header { height: 75vh; }
+    h1 { font-size: 15rem; }
+    h2 { font-size: 8.6rem; }
+
+    /* .nav-menu { display: none; } */
+    .nav-menu ul li { display: none; }
+    /* .nav-menu > ul:nth-child(1) > li:nth-child(1) { display: block; } */
+    .nav-menu > ul > li:first-child { display: block; }
+    .img-logo { height: 3rem; margin-right: 90rem; }
+
+    .hamburger { display: block; }
+
+    .btn:link, .btn:visited { padding: 1.5rem; font-size: 1.7rem; }
+    .btn-hero { background: rgba(0, 0, 0, .7); }
+    .hero-text-box { top: 32%; }
+    .btn-hero { display: block; margin: 46rem -47rem -43rem 32rem; width: 50%; }
+    a.btn:nth-child(1) { background-color: var(--red); }
+    .heading { font-size: 8rem; }
+
+    .about-img { margin-left: -999rem; }
+    .about-content { margin-left: 8rem; }
+    .about-content > h3 { font-size: 7.2rem; margin-bottom: 5.2rem; margin-right: 14rem; }
+    .about-content > h3:after { top: 8.3rem; left: 29%; }
+    .about-text { margin-left: 14rem; }
+    .about-text > p { font-size: 2rem; width: 100%; padding: 3.1rem 21rem 0 0; }
+
+    .section-pizza { padding: 18rem 0 30rem 0; }
+    .pizza-container { width: 100%; }
+    .pizza-heading { margin: -41rem 0 0 15rem; width: 100%; }
+    .pizza-title { display: inline-block; margin-left: 10rem; }
+    .pizza-content { margin-left: 23rem; padding-right: 3rem; }
+    .pizza-content h4 { font-size: 4rem; }
+    .pizza-content > span { font-size: 2rem; text-align: center; }
+    .pizza-img { display: none; }
+    .pizza-btn { top: 86rem; left: 23rem; }
+
+    .section-drinks { padding: 67rem 0 25rem 0; }
+    .drink-heading { margin: -56rem 0 0 22rem; width: 69%; font-size: 7rem; }
+    .drink-img { display: none; }
+    .drink-content { text-align: left; margin: 6rem  0 0 24rem; }
+    .drink-content h4 { font-size: 4rem; padding-top: 6rem; }
+    .drink-content span { font-size: 1.5rem; }
+    .drink-btn { top: 90rem; left: 24rem; }
+
+    .reserv-form { padding-bottom: 20rem; }
+    .btn-form { margin-left: .5rem; width: 93%; background-color: rgba(var(--red-darker), 0.5); }
+
+
+    .footer { padding: 6rem 0; }
+    .footer span { font-size: 2rem; padding-left: 3rem; }
+    .footer-links { margin-left: 1rem; }
+}
+
+@media only screen and (max-width: 690px) {
+    
+    .img-logo { margin-right: 76rem; }
+    .btn-hero { margin: 46rem -47rem -43rem 26rem; }
+    
+    
+    .section-about { padding: 1rem 0 16rem 0; }
+    .drink-heading { font-size: 6rem; }
+    .pizza-heading { font-size: 7rem; }
+    
+    .drink-heading { font-size: 6rem; }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    html { font-size: 30%; }
+    
+    h3:after { top: 6rem; }
+    
+    .img-logo { margin-right: 85rem; }
+    .hero-text-box { left: 45%; }
+    .btn-hero { width: 45%; }
+    
+    .about-content { margin-left: 14rem; width: 85%; }
+    
+    .pizza-container { width: 85%; }
+    .pizza-heading { font-size: 6rem; }
+    .pizza-content { margin-left: 24rem; }
+    .pizza-btn { left: 23rem; }
+
+    .drink-heading { margin: -56rem 0 0 24rem; width: 64%; font-size: 5.5rem; }
+    .drink-btn { top: 90rem; }
+    
+
+    .reserv-heading { margin-right: 16rem; }
+    .reserv-form { margin: 5rem 0 0 19%; padding: 3rem 0 24rem 0; }
+    .btn-form { margin-left: 6rem; width: 80%; background-color: rgba(var(--red-darker), 0.5); }
+}
