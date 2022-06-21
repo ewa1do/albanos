@@ -1,204 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albanos</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Albanos</title>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap" rel="stylesheet">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Icons -->
-    <!-- styles -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/queries.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <header>
-        <nav class="nav-menu">
-            <ul>
-                <li><img class="img-logo" src="assets/img/vector/default-monochrome-white.svg" alt="" srcset=""></li>
-                <li><a href="#">Menu</a></li>    
-                <li><a href="#">Bar</a></li>    
-                <li><a href="#">About</a></li>
-                <li class="breaker"><a href="#">MAKE A RESERVATION</a></li>  
-                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li> 
+        <!-- Icons -->
+        <!-- styles -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/queries.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <nav class="nav-menu">
+                <ul class="nav-menu__wrapper">
+                    <div class="wrapper--logo">
+                        <li>
+                            <img
+                                class="img-logo"
+                                src="assets/img/vector/default-monochrome-white.svg"
+                                alt=""
+                                srcset=""
+                            />
+                        </li>
+                    </div>
+                    <div class="wrapper--section">
+                        <li class="wrappper--section__link">
+                            <a href="#">Menu</a>
+                        </li>
+                        <li class="wrappper--section__link">
+                            <a href="#">Bar</a>
+                        </li>
+                        <li class="wrappper--section__link">
+                            <a href="#">About</a>
+                        </li>
+                    </div>
+
+                    <li class="wrappper--section__link">
+                        <a href="#">MAKE A RESERVATION</a>
+                    </li>
+
+                    <div class="wrapper--social">
+                        <li class="wrapper--social__link">
+                            <a href="#"
+                                ><ion-icon name="logo-twitter"></ion-icon
+                            ></a>
+                        </li>
+                        <li class="wrapper--social__link">
+                            <a href="#"
+                                ><ion-icon name="logo-instagram"></ion-icon
+                            ></a>
+                        </li>
+                        <li class="wrapper--social__link">
+                            <a href="#"
+                                ><ion-icon name="logo-facebook"></ion-icon
+                            ></a>
+                        </li>
+                    </div>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+            <div class="hero-text-box">
+                <h1>Albano's</h1>
+                <h2>Pub and Pizza</h2>
+            </div>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-hero btn-hero-red"
+                    >Make a reservation</a
+                >
+                <a href="#" class="btn btn-hero">Order now!</a>
+            </div>
+        </header>
+
+        <section class="section section-about">
+            <div class="section-about">
+                <img
+                    class="about-img"
+                    src="assets/img/aleksandra-king.jpg"
+                    alt=""
+                />
+            </div>
+
+            <div class="about-content">
+                <h3>Who we are</h3>
+                <div class="about-text">
+                    <p>
+                        Welcome to Albano's Pub and Pizza restaurant,
+                        Covington's newest neighborhood watering hole and pizza
+                        destination.
+                    </p>
+                    <p>
+                        My name is Aleksandra King and i'm the owner of the
+                        restaurant, after a series of wonderful and sometimes
+                        difficult years of my life, i decided to pursue my dream
+                        and become a chef by profession.
+                    </p>
+
+                    <p>
+                        There are so many things i would like to tell you, so i
+                        would like to start with the basics.
+                    </p>
+
+                    <p>Why i chose food as a career?</p>
+
+                    <p>
+                        I always followed my heart, and that worked out for me.
+                        I knew what I needed to be happy, and didn't mind being
+                        a little strange.
+                    </p>
+
+                    <p>
+                        Being this way helped me find what I needed to fit into
+                        my life, and I tried to be okay with who I was, even if
+                        other people found it difficult.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-pizza">
+            <div class="pizza-container">
+                <div class="pizza-title">
+                    <img class="pizza-img" src="assets/img/menu-small.jpg" />
+                    <h4 class="pizza-heading heading">Feeling hungry?</h4>
+                </div>
+                <div class="pizza-content">
+                    <h4>Pomodoro</h4>
+                    <span>Tomato sauce, olive oil, dried herbs</span>
+
+                    <h4>Prosciutto & arugula</h4>
+                    <span
+                        >Béchamel, mozzarella, prosciutto di parma, dressed
+                        arigula</span
+                    >
+
+                    <h4>La caprina</h4>
+                    <span
+                        >Tomato sauce, goat's cheese, double smoked bacon, fire
+                        roasted peppers</span
+                    >
+
+                    <h4>Pepperoni</h4>
+                    <span
+                        >Tomato sauce, mozzarella, dry cured pepperoni,
+                        parsley</span
+                    >
+
+                    <h4>Funghi</h4>
+                    <span
+                        >Tomato sauce, mozarella, goat's cheese, seasonal
+                        sautéed mushrooms, garlic butter</span
+                    >
+                </div>
+                <a href="#" class="btn pizza-btn">Order now!</a>
+            </div>
+        </section>
+
+        <section class="section section-drinks">
+            <div class="drink-container">
+                <div class="drink-title">
+                    <img src="assets/img/drinks.jpg" class="drink-img" />
+                    <h4 class="heading drink-heading">
+                        What do you want to drink
+                    </h4>
+                </div>
+                <div class="drink-content">
+                    <h4>Vodka martini</h4>
+                    <span
+                        >60ml vodka, 1 tbsp dry vermouth, olive or lemon peel,
+                        to garnish</span
+                    >
+
+                    <h4>Hurricane cocktail</h4>
+                    <span>
+                        50ml dark rum, 50ml white rum, 1 passion fruit, 1 orange
+                        , juiced 1 lemon , juiced 50ml sugar syrup, 2 tsp
+                        grenadine</span
+                    >
+
+                    <h4>Sweet manhattan cocktail</h4>
+                    <span
+                        >50ml bourbon or rye whiskey, 25ml rosso vermouth, 5ml
+                        syrup from a jar of maraschino cherries, 2 dashes
+                        Angostura bitters, ice</span
+                    >
+
+                    <h4>Blueberry mojito</h4>
+                    <span
+                        >100g blueberries, 3 lemons , chopped 2 tbsp granulated
+                        sugar 2 mint sprigs , leaves picked 350ml white rum,
+                        600ml sparkling water</span
+                    >
+
+                    <h4>Black russian cocktail</h4>
+                    <span
+                        >50ml vodka, 25ml coffee liqueur, ice, 1 maraschino
+                        cherry, cola to top up,</span
+                    >
+                </div>
+                <a href="#" class="btn drink-btn">See more</a>
+            </div>
+        </section>
+
+        <section class="section-reserv">
+            <h3 class="reserv-heading">Make a Reservation</h3>
+            <div class="reserv-container">
+                <form class="reserv-form" action="#" method="">
+                    <label for="name">Name: </label>
+                    <input class="input" type="text" name="name" />
+
+                    <br />
+
+                    <label for="email">Email: </label>
+                    <input class="input" type="email" name="email" />
+
+                    <br />
+
+                    <label for="tlf">Phone Number: </label>
+                    <input class="input" type="text" name="tlf" />
+
+                    <br />
+
+                    <label for="date">Date</label>
+                    <input
+                        class="input"
+                        type="month"
+                        name="date"
+                        placeholder="yy-mm-dd"
+                    />
+
+                    <br />
+
+                    <label for="date">Time</label>
+                    <input class="input" type="time" name="date" />
+
+                    <br />
+
+                    <input
+                        class="btn-form btn"
+                        type="submit"
+                        value="Book it!"
+                    />
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <span
+                >Made with &hearts; by Eduardo Vera. &copy; 2021 All Rights
+                Reserved</span
+            >
+            <ul class="footer-links">
+                <li>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+            <img
+                class="img-logo-big"
+                src="assets/img/vector/default-monochrome-white.svg"
+                alt=""
+                srcset=""
+            />
+        </footer>
 
-        <div class="hero-text-box">
-            <h1>Albano's</h1>
-            <h2>Pub and Pizza</h2>
-        </div>
-        <div class="hero-buttons">
-            <a href="#" class="btn btn-hero btn-hero-red">Make a reservation</a>
-            <a href="#" class="btn btn-hero">Order now!</a>
-        </div>
-       
-    </header>
-
-    <section class="section section-about">
-        <div class="section-about">
-            <img class="about-img" src="assets/img/aleksandra-king.jpg" alt="">
-        </div>
-        
-        <div class="about-content">
-            <h3>Who we are</h3>
-            <div class="about-text">
-                <p>
-                    Welcome to Albano's Pub and Pizza restaurant, Covington's newest neighborhood watering hole and pizza destination. 
-                </p>
-                <p>
-                    My name is Aleksandra King and i'm the owner of the restaurant, after a series of wonderful and sometimes difficult years of my life, i decided to pursue my dream and become a chef by profession.
-                </p>
-    
-                <p>
-                    There are so many things i would like to tell you, so i would like to start with the basics.
-                </p>
-    
-                <p>
-                    Why i chose food as a career? 
-                </p>
-    
-                <p>
-                    I always followed my heart, and that worked out for me. I knew what I needed to be happy, and didn't mind being a little strange.
-                </p>
-    
-                <p>
-                    Being this way helped me find what I needed to fit into my life, and I tried to be okay with who I was, even if other people found it difficult.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-pizza">
-        <div class="pizza-container">
-            <div class="pizza-title">
-                <img class="pizza-img" src="assets/img/menu-small.jpg">
-                <h4 class="pizza-heading heading">Feeling hungry?</h4>
-            </div>
-            <div class="pizza-content">
-                <h4>Pomodoro</h4>
-                <span>Tomato sauce, olive oil, dried herbs</span>
-
-                <h4>Prosciutto & arugula</h4>
-                <span>Béchamel, mozzarella, prosciutto di parma, dressed arigula</span>
-
-                <h4>La caprina</h4>
-                <span>Tomato sauce, goat's cheese, double smoked bacon, fire roasted peppers</span>
-
-                <h4>Pepperoni</h4>
-                <span>Tomato sauce, mozzarella, dry cured pepperoni, parsley</span>
-
-                <h4>Funghi</h4>
-                <span>Tomato sauce, mozarella, goat's cheese, seasonal sautéed mushrooms, garlic butter</span>
-                
-            </div>
-            <a href="#" class="btn pizza-btn">Order now!</a>
-        </div>
-        
-    </section>
-
-    <section class="section section-drinks">
-        <div class="drink-container">
-            <div class="drink-title">
-                <img src="assets/img/drinks.jpg" class="drink-img">
-                <h4 class="heading drink-heading">What do you want to drink</h4>
-            </div>
-            <div class="drink-content">
-                <h4>Vodka martini</h4>
-                <span>60ml vodka, 1 tbsp dry vermouth, olive or lemon peel, to garnish</span>
-
-                <h4>Hurricane cocktail</h4>
-                <span>    50ml dark rum,
-                    50ml white rum,
-                    1 passion fruit,
-                    1 orange , juiced
-                    1 lemon , juiced
-                    50ml sugar syrup,
-                    2 tsp grenadine</span>
-
-                <h4>Sweet manhattan cocktail</h4>
-                <span>50ml bourbon or rye whiskey,
-                    25ml rosso vermouth,
-                    5ml syrup from a jar of maraschino cherries, 
-                    2 dashes Angostura bitters, 
-                    ice</span>
-
-                <h4>Blueberry mojito</h4>
-                <span>100g blueberries,
-                    3 lemons , chopped
-                    2 tbsp granulated sugar
-                    2 mint sprigs , leaves picked
-                    350ml white rum, 
-                    600ml sparkling water</span>
-
-                <h4>Black russian cocktail</h4>
-                <span>50ml vodka, 
-                    25ml coffee liqueur, 
-                    ice, 
-                    1 maraschino cherry, 
-                    cola to top up,</span> 
-            </div>
-            <a href="#" class="btn drink-btn">See more</a>
-        </div>
-    </section>
-
-    <section class="section-reserv">
-        <h3 class="reserv-heading">Make a Reservation</h3>
-        <div class="reserv-container">
-            <form class="reserv-form" action="#" method="">
-                <label for="name">Name: </label>
-                <input class="input" type="text" name="name">
-
-                <br>
-
-                <label for="email">Email: </label>
-                <input class="input" type="email" name="email">
-
-                <br>
-
-                <label for="tlf">Phone Number: </label>
-                <input class="input" type="text" name="tlf">
-
-                <br>
-
-                <label for="date">Date</label>
-                <input class="input" type="month" name="date" placeholder="yy-mm-dd">
-                
-                <br>
-
-                <label for="date">Time</label>
-                <input class="input" type="time" name="date">
-
-                <br>
-
-                <input clasS="btn-form btn" type="submit" value="Book it!">
-            </form>
-        </div>
-    </section>
-    <footer class="footer">
-        <span>Made with &hearts; by Eduardo Vera. &copy; 2021 All Rights Reserved</span>
-        <ul class="footer-links">
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-        </ul>
-        <img class="img-logo-big" src="assets/img/vector/default-monochrome-white.svg" alt="" srcset="">
-    </footer>
-    
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
 </html>
