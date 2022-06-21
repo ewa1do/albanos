@@ -7,17 +7,19 @@
 }
 
 /* VARIABLES */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
 :root {
-    --main-color: #353B48;
+    --main-color: #353b48;
     --second-color: #1f2533;
     --second-color-darker: 31, 37, 51;
-    --third-color: #1F2533;
-    --fourth-color: #6C7383;
-    --white: rgba(255,255,255, .9);
+    --third-color: #1f2533;
+    --fourth-color: #6c7383;
+    --white: rgba(255, 255, 255, 0.9);
     --red: #d63031;
     --red-darker: 214, 48, 49;
 }
-
 
 html {
     font-size: 62.5%;
@@ -26,12 +28,13 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, 0.6);
     overflow-x: hidden;
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url(../img/hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url(../img/hero.jpg);
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
@@ -55,7 +58,7 @@ h1 {
 h2 {
     font-family: 'Yellowtail', sans-serif;
     color: var(--white);
-    font-size: 4.6rem; 
+    font-size: 4.6rem;
     text-align: center;
     font-weight: 100;
 }
@@ -65,11 +68,10 @@ h3 {
     text-align: center;
     font-weight: 100;
     position: relative;
-
 }
 
 h3:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 5rem;
     bottom: 0;
@@ -80,149 +82,145 @@ h3:after {
     width: 30%;
 }
 
-
 .heading {
     font-size: 7rem;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 3;
     border: 2px solid var(--white);
     text-align: center;
     font-weight: 300;
 }
 
-
 /* Buttons */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
 
 .btn:link,
 .btn:visited {
-    padding: .7rem;
+    padding: 0.7rem;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.4rem;
     color: var(--white);
-    border: 1px solid var(--white);   
+    border: 1px solid var(--white);
 }
 
 .btn-hero {
     display: inline-block;
-    font-size: .65em;
+    font-size: 0.65em;
     margin: 48rem -46rem 0rem 47rem;
     background: transparent;
-    box-shadow: 0 0 2px rgba(0,0,0,.6);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     border-radius: 3px;
-    transition: all .3s;
+    transition: all 0.3s;
     width: 15%;
 }
 
 .btn-hero-red {
     background-color: var(--red);
     border: transparent;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .btn-hero-red:hover,
 .btn-hero-red:active {
     border: 1px solid var(--white);
-    background-color: rgba(var(--red-darker), .9)
+    background-color: rgba(var(--red-darker), 0.9);
 }
 
 .btn-hero:hover,
 .btn-hero:active {
-    background: rgba(0,0,0,.6);
-    box-shadow: 0 0 2px rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
-
 /* Nav */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
+
 .nav-menu {
     position: fixed;
     top: 0;
-    background-color: rgba(var(--second-color-darker), .85);
-    height: 4.5rem;
+    background-color: rgba(var(--second-color-darker), 0.85);
+    height: 4rem;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
+}
+
+.nav-menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
 }
 
 .img-logo {
     height: 2rem;
-    margin-left: -15rem;
+    margin-top: 1rem;
+    margin-left: -8rem;
 }
 
-.img-logo-big {
-    width: 25%;
-    display: block;
-    float: right;  
-    margin-top: -7rem;
-    margin-right: 5rem;
+.nav-menu div {
+    display: flex;
 }
 
-.nav-menu ul {
-    float: right;
-    margin-right: 32rem;
+.nav-menu div li {
+    padding: 0 1rem;
 }
 
-.nav-menu ul li{
-    display: inline-block;
-    margin: .5rem 1.3rem;
-    padding-top: .3rem;
-}
-
-.nav-menu ul li a:link,
-.nav-menu ul li a:visited {
+.wrappper--section__link a:link,
+.wrappper--section__link a:visited,
+.wrapper--social__link a:link,
+.wrapper--social__link a:visited {
     color: var(--white);
     font-size: 1.4rem;
     text-decoration: none;
     text-align: center;
     border-bottom: transparent;
-    transition: all .3s ease-out;
-    padding: 0 0 .23rem 0;
+    transition: all 0.3s ease-out;
+    padding: 0 0 0.23rem 0;
 }
 
-.nav-manu ul li a:last-child {
-    color: red;
+.wrappper--section__link a:hover,
+.wrappper--section__link a:active {
+    border-bottom: 1px solid rgba(var(--red-darker), 0.8);
 }
 
-.breaker {
-    padding: 0 15rem;
-}
-
-.nav-menu ul li a:hover,
-.nav-menu ul li a:active {
-    border-bottom: 1px solid rgba(var(--red-darker), .8);
-}
-
-.social-links {
-    float: right;
-    margin-right: 4rem;
-    padding-left: 30rem;
+.wrapper--social {
+    padding-top: 1rem;
 }
 
 /* HAMBURGER */
 .hamburger {
     display: none;
     cursor: pointer;
+    margin-top: 0.5rem;
 }
 
 .bar {
-    display: block;
-    width: 4rem;
+    display: none;
+    width: 3rem;
     height: 2px;
-    margin: 4px auto;
-    /* transition: all 0.3s ease-in-out; */
+    margin: 3px auto;
     transition: all 0.3s ease-in-out;
-    background-color: rgba(157, 152, 152, .9);
+    background-color: rgba(157, 152, 152, 0.9);
     margin-right: 4rem;
 }
 
 /* SECTION ABOUT */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
 
 .section {
     padding: 8rem 0;
 }
 
 .section-about {
-    background-color: inherit; 
+    background-color: inherit;
     padding: 1rem 0 5rem 0;
 }
 
@@ -232,7 +230,7 @@ h3:after {
     height: 64rem;
     margin-left: 10rem;
     margin-top: 10rem;
-    padding-bottom: 4rem;   
+    padding-bottom: 4rem;
 }
 
 .about-content {
@@ -248,7 +246,7 @@ h3:after {
 }
 
 .about-content > h3:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 6.3rem;
     bottom: 0;
@@ -261,7 +259,6 @@ h3:after {
 
 .about-text {
     margin-left: 24rem;
-
 }
 
 .about-text > p {
@@ -270,20 +267,18 @@ h3:after {
     padding: 1.5rem 0;
 }
 
-
 /* SECTION MENU */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
 
 .section-pizza {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 16rem 0 24rem 0;
 }
 
 .pizza-container {
     width: 40%;
-}
-
-.pizza-title {
-
 }
 
 .pizza-img {
@@ -292,7 +287,7 @@ h3:after {
     margin-left: 93.85rem;
     transform: scale(1.4) rotate(-90deg);
     overflow-x: hidden;
-    filter: brightness(.6);
+    filter: brightness(0.6);
     z-index: 0;
     position: relative;
 }
@@ -334,19 +329,21 @@ h3:after {
     position: absolute;
     top: 50rem;
     left: 10rem;
-    transition: border .3s;
+    transition: border 0.3s;
 }
 
 .pizza-btn:hover,
 .drink-btn:hover {
-    border:1px solid var(--red);
+    border: 1px solid var(--red);
 }
 
-
 /* SECTION DRINKS */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
 
 .section-drinks {
-    background-color: rgba(0,0,0,.87);
+    background-color: rgba(0, 0, 0, 0.87);
     padding: 10rem 0 17rem 0;
 }
 
@@ -357,7 +354,7 @@ h3:after {
 .drink-img {
     width: 50vw;
     height: 100vh;
-    filter: grayscale(.75) contrast(150%);
+    filter: grayscale(0.75) contrast(150%);
     z-index: 0;
 }
 
@@ -392,21 +389,27 @@ h3:after {
     padding-top: 1rem;
 }
 
-
 .drink-btn {
     position: absolute;
     left: 92%;
     top: 66rem;
-    transition: border .3s;
+    transition: border 0.3s;
 }
 
-
 /* SECTION RESERVATIONS */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
 
 .section-reserv {
     padding: 8rem 0;
-   /*  background-color: rgba(0,0,0,.7); */
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,.5)) ,url(../img/pizza.jpg);
+    /*  background-color: rgba(0,0,0,.7); */
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url(../img/pizza.jpg);
     background-size: cover;
     background-position: center;
     height: 85vh;
@@ -420,7 +423,7 @@ h3:after {
 
 .reserv-form {
     margin-left: 25%;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
     width: 50%;
     padding: 2rem;
     border-radius: 1%;
@@ -440,10 +443,9 @@ label {
     padding: 0.5rem 0;
     color: var(--white);
     border: 0;
-    border-bottom: 1px solid white;  
+    border-bottom: 1px solid white;
     width: 30%;
 }
-
 
 .input:focus-visible,
 .input:focus-within,
@@ -457,26 +459,30 @@ input[placeholder] {
 
 .btn-form {
     border: 0;
-    padding: .6rem;
+    padding: 0.6rem;
     text-transform: uppercase;
     font-family: inherit;
     background: transparent;
     border: 1px solid var(--white);
     color: var(--white);
     cursor: pointer;
-    transition: border .3s;
+    transition: border 0.3s;
     margin-left: 55rem;
     position: absolute;
     bottom: 8%;
 }
 
 .btn-form:hover {
-    border: 1px solid rgba(var(--red-darker), .8);
+    border: 1px solid rgba(var(--red-darker), 0.8);
 }
 
 /* FOOTER */
-.footer { 
-    background: rgba(0,0,0,.87);
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
+
+.footer {
+    background: rgba(0, 0, 0, 0.87);
     padding: 4rem 0;
 }
 
@@ -498,4 +504,12 @@ input[placeholder] {
 
 .footer-links a {
     color: white;
+}
+
+.img-logo-big {
+    width: 25%;
+    display: block;
+    float: right;
+    margin-top: -7rem;
+    margin-right: 5rem;
 }
