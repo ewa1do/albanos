@@ -34,6 +34,30 @@ Breakpoints:
     .hero-buttons a {
         margin-left: 0;
     }
+
+    /* ================================== */
+    /* SECTION ABOUT */
+    /* ================================== */
+
+    .about-img {
+        display: block;
+    }
+
+    .about-img img {
+        height: 40rem;
+        margin-top: 10rem;
+    }
+
+    .about-text {
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .about-text p {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }
 
 @media only screen and (max-width: 48em) {
@@ -59,9 +83,28 @@ Breakpoints:
     .hero-buttons a {
         margin: 0.4rem auto;
     }
+
+    /* ================================== */
+    /* SECTION ABOUT */
+    /* ================================== */
+    .about-img {
+        display: none;
+    }
+
+    .about-content {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 40em) {
+    .about-content h3 {
+        font-size: 3.5rem;
+    }
+
+    h3:after {
+        left: 17%;
+        width: 68%;
+    }
 }
 
 /* @media only screen and (max-width: 1024px) { */

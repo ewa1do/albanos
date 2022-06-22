@@ -57,13 +57,13 @@ h3 {
 h3:after {
     content: '';
     position: absolute;
-    top: 5rem;
+    top: 5.5rem;
     bottom: 0;
-    left: 35%;
+    left: 28%;
     right: 0;
     height: 0.2rem;
     border-top: 3px solid var(--red);
-    width: 30%;
+    width: 43%;
 }
 
 .heading {
@@ -231,56 +231,40 @@ h3:after {
 /* ======================================================== */
 /* ======================================================== */
 
-.section {
-    padding: 8rem 0;
-}
-
 .section-about {
-    background-color: inherit;
-    padding: 1rem 0 5rem 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 4rem 0;
 }
 
-.about-img {
-    display: block;
-    /* 640x962 */
-    height: 64rem;
+.about-img img {
+    height: 60rem;
     margin-left: 10rem;
-    margin-top: 10rem;
-    padding-bottom: 4rem;
 }
 
 .about-content {
-    /* display: block; */
-    margin-top: -64rem;
-    margin-left: 50rem;
+    width: 70%;
+    padding: 0 2rem;
+    margin-left: 4rem;
 }
 
-.about-content > h3 {
-    font-size: 5.2rem;
-    margin-bottom: 2.2rem;
-    font-weight: 300;
-}
-
-.about-content > h3:after {
-    content: '';
-    position: absolute;
-    top: 6.3rem;
-    bottom: 0;
-    left: 31%;
-    right: 0;
-    height: 0.2rem;
-    border-top: 3px solid var(--red);
-    width: 40%;
+.about-content h3 {
+    font-weight: 400;
+    font-size: 4.5rem;
 }
 
 .about-text {
-    margin-left: 24rem;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
 }
 
-.about-text > p {
-    font-size: 1.7rem;
-    width: 70%;
-    padding: 1.5rem 0;
+.about-text p {
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    word-spacing: 1px;
 }
 
 /* SECTION MENU */
