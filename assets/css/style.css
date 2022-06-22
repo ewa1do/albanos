@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* VARIABLES */
+/* VARIABLES & RESET */
 /* ======================================================== */
 /* ======================================================== */
 /* ======================================================== */
@@ -64,6 +64,10 @@ h3:after {
     height: 0.2rem;
     border-top: 3px solid var(--red);
     width: 43%;
+}
+
+ul {
+    list-style: none;
 }
 
 .heading {
@@ -274,67 +278,51 @@ h3:after {
 
 .section-pizza {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 16rem 0 24rem 0;
 }
 
 .pizza-container {
-    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.pizza-img {
-    display: block;
-    width: 70%;
-    margin-left: 93.85rem;
-    transform: scale(1.4) rotate(-90deg);
-    overflow-x: hidden;
-    filter: brightness(0.6);
-    z-index: 0;
-    position: relative;
-}
-
-.pizza-heading {
-    width: 60%;
-    margin-left: 60rem;
-    margin-top: -50rem;
-    position: relative;
-}
-
-.pizza-container {
-    position: relative;
+.pizza-title .pizza-img {
+    filter: brightness(0.75) grayscale(0.2) contrast(120%);
 }
 
 .pizza-content {
-    /* display: block; */
-    margin-left: 10rem;
-    margin-top: -18rem;
-    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
-.pizza-content h4 {
-    font-size: 3.4rem;
-    font-weight: 300 bold;
+.pizza-menu {
+    margin-top: 3rem;
 }
 
-.pizza-content h4:not(:first-child) {
-    padding-top: 3rem;
+.pizza-menu__item {
+    padding: 3rem 0;
 }
 
-.pizza-content > span {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    padding-top: 1rem;
+.pizza-menu__item h4 {
+    font-size: 4rem;
+    text-shadow: 0 10px 15px #222;
+}
+
+.pizza-menu__item span {
+    font-size: 1.4rem;
 }
 
 .pizza-btn {
-    position: absolute;
-    top: 50rem;
-    left: 10rem;
-    transition: border 0.3s;
+    margin-top: 8rem;
+    width: 30%;
+    box-shadow: 0 5px 25px #111;
+    transition: all 0.4s ease;
 }
 
-.pizza-btn:hover,
-.drink-btn:hover {
-    border: 1px solid var(--red);
+.pizza-btn:hover {
+    border: 1px solid var(--white);
+    box-shadow: 0 5px 10px #111;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /* SECTION DRINKS */
