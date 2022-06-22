@@ -16,7 +16,7 @@
     --second-color-darker: 31, 37, 51;
     --third-color: #1f2533;
     --fourth-color: #6c7383;
-    --white: rgba(255, 255, 255, 0.9);
+    --white: rgba(255, 255, 255, 0.85);
     --red: #d63031;
     --red-darker: 214, 48, 49;
 }
@@ -30,22 +30,6 @@ body {
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.6);
     overflow-x: hidden;
-}
-
-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-        url(../img/hero.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    position: relative;
-}
-
-.hero-text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -98,42 +82,19 @@ h3:after {
 
 .btn:link,
 .btn:visited {
-    padding: 0.7rem;
     text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--white);
     color: var(--white);
-    border: 1px solid var(--white);
-}
-
-.btn-hero {
+    border-radius: 4px;
     display: inline-block;
-    font-size: 0.65em;
-    margin: 48rem -46rem 0rem 47rem;
-    background: transparent;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
-    transition: all 0.3s;
-    width: 15%;
+    transition: all 0.4s ease;
 }
 
-.btn-hero-red {
-    background-color: var(--red);
-    border: transparent;
-    transition: all 0.3s;
-}
-
-.btn-hero-red:hover,
-.btn-hero-red:active {
-    border: 1px solid var(--white);
-    background-color: rgba(var(--red-darker), 0.9);
-}
-
-.btn-hero:hover,
-.btn-hero:active {
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+.btn:hover,
+.btn:active {
+    border-color: var(--red);
 }
 
 /* Nav */
@@ -208,6 +169,61 @@ h3:after {
     transition: all 0.3s ease-in-out;
     background-color: rgba(157, 152, 152, 0.9);
     margin-right: 4rem;
+}
+
+/* HEADER */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
+
+.hero-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url(../img/hero.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero-header__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.hero-text-box {
+    text-align: center;
+}
+
+.hero-text-box,
+.hero-buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.hero-buttons {
+    grid-row: 3 / -1;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.hero-buttons a {
+    margin-left: 2rem;
+}
+
+.btn-hero {
+    background: transparent;
+}
+
+.btn-hero:hover {
+    border: 1px solid var(--white);
+}
+
+.btn-hero-red {
+    background-color: rgba(var(--red-darker), 0.9);
+}
+
+.btn-hero:hover {
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /* SECTION ABOUT */
