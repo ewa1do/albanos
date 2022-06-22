@@ -64,6 +64,22 @@ Breakpoints:
     .pizza-content {
         width: 50%;
     }
+
+    /* ================================== */
+    /* SECTION DRINKS */
+    /* ================================== */
+    .drink-title {
+        align-self: center;
+    }
+    .drink-menu__item {
+        padding: 1.5rem 0;
+    }
+    .drink-menu__item h4 {
+        font-size: 3rem;
+    }
+    .drink-menu__item span {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 48em) {
@@ -101,24 +117,31 @@ Breakpoints:
     /* ================================== */
     /* SECTION MENU */
     /* ================================== */
+    .section-pizza {
+        padding: 4rem 0;
+    }
+
     .pizza-container {
         flex-direction: column;
     }
     .pizza-img {
         display: none;
     }
-    .pizza-title {
+    .pizza-title,
+    .drink-title {
         width: 100%;
         padding: 2rem 0;
     }
-    .pizza-title h4 {
+    .pizza-title h4,
+    .drink-title h4 {
         font-size: 5rem;
         font-weight: 400;
         border: transparent;
         background-color: transparent;
         position: relative;
     }
-    .pizza-title h4:after {
+    .pizza-title h4:after,
+    .drink-title h4:after {
         content: '';
         position: absolute;
         top: 6.5rem;
@@ -135,10 +158,42 @@ Breakpoints:
     .pizza-menu__item h4 {
         font-size: 3rem;
     }
-    .pizza-btn {
+    .pizza-btn,
+    .drink-btn {
         margin-top: 4rem;
         width: 60%;
         text-align: center;
+    }
+
+    /* ================================== */
+    /* SECTION DRINKS */
+    /* ================================== */
+    .drink-container {
+        flex-direction: column;
+    }
+    .drink-img {
+        display: none;
+    }
+    .drink-title h4 {
+        font-size: 4rem;
+    }
+    .drink-title h4:after {
+        content: '';
+        position: absolute;
+        top: 6rem;
+        bottom: 0;
+        left: 28%;
+        right: 0;
+        height: 0.2rem;
+        border-top: 3px solid var(--red);
+        width: 43%;
+    }
+    .drink-content {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .drink-menu__item {
+        padding: 3rem 0;
     }
 }
 
@@ -162,6 +217,13 @@ Breakpoints:
         width: 70%;
         margin: 0 auto;
     }
+
+    /* ================================== */
+    /* SECTION DRINKS */
+    /* ================================== */
+    .drink-title h4 {
+        font-size: 3.6rem;
+    }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -170,5 +232,18 @@ Breakpoints:
     /* ================================== */
     .pizza-title h4 {
         font-size: 4rem;
+    }
+
+    /* ================================== */
+    /* SECTION DRINKS */
+    /* ================================== */
+    .drink-title h4 {
+        font-size: 3.2rem;
+    }
+    .drink-menu__item h4 {
+        font-size: 3rem;
+    }
+    .drink-title h4::after {
+        top: 8rem;
     }
 }

@@ -299,27 +299,32 @@ ul {
     margin-top: 3rem;
 }
 
-.pizza-menu__item {
+.pizza-menu__item,
+.drink-menu__item {
     padding: 3rem 0;
 }
 
-.pizza-menu__item h4 {
+.pizza-menu__item h4,
+.drink-menu__item h4 {
     font-size: 4rem;
     text-shadow: 0 10px 15px #222;
 }
 
-.pizza-menu__item span {
+.pizza-menu__item span,
+.drink-menu__item span {
     font-size: 1.4rem;
 }
 
-.pizza-btn {
+.pizza-btn,
+.drink-btn {
     margin-top: 8rem;
     width: 30%;
     box-shadow: 0 5px 25px #111;
     transition: all 0.4s ease;
 }
 
-.pizza-btn:hover {
+.pizza-btn:hover,
+.drink-btn:hover {
     border: 1px solid var(--white);
     box-shadow: 0 5px 10px #111;
     background: rgba(0, 0, 0, 0.6);
@@ -332,56 +337,48 @@ ul {
 
 .section-drinks {
     background-color: rgba(0, 0, 0, 0.87);
-    padding: 10rem 0 17rem 0;
+    padding: 3rem 1rem;
 }
 
 .drink-container {
-    position: relative;
+    display: flex;
+}
+
+.drink-title {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    margin-top: 6rem;
+}
+
+.drink-title h4 {
+    font-size: 6rem;
+    width: 95%;
 }
 
 .drink-img {
-    width: 50vw;
-    height: 100vh;
-    filter: grayscale(0.75) contrast(150%);
-    z-index: 0;
-}
-
-.drink-heading {
-    position: relative;
-    width: 40%;
-    margin-top: -72rem;
-    margin-left: 44rem;
-    z-index: 1;
+    width: 95%;
 }
 
 .drink-content {
-    display: block;
-    margin-left: 82rem;
-    margin-top: -6rem;
-    padding-right: 1rem;
-    text-align: right;
+    width: 40%;
+    padding-left: 3rem;
 }
 
-.drink-content h4:not(:fist-child) {
-    padding-top: 3rem;
+.drink-menu {
+    margin-top: 3rem;
 }
 
-.drink-content h4 {
-    font-size: 3.4rem;
-    padding-top: 3rem;
+.drink-menu__item {
+    padding: 2rem 0;
 }
 
-.drink-content span {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    padding-top: 1rem;
+.drink-menu__item h4 {
+    font-size: 3.5rem;
 }
 
 .drink-btn {
-    position: absolute;
-    left: 92%;
-    top: 66rem;
-    transition: border 0.3s;
+    margin-top: 5rem;
 }
 
 /* SECTION RESERVATIONS */
