@@ -7,6 +7,15 @@ Breakpoints:
 @media only screen and (max-width: 75em) {
 }
 
+@media only screen and (max-width: 68.75em) {
+    /* ================================ */
+    /* HEADER */
+    /* ================================ */
+    .hero-buttons a {
+        margin-left: 1rem;
+    }
+}
+
 @media only screen and (max-width: 62em) {
     /* ================================ */
     /* NAV */
@@ -18,9 +27,19 @@ Breakpoints:
     .img-logo {
         margin-left: 0;
     }
+
+    /* ================================ */
+    /* HEADER */
+    /* ================================ */
+    .hero-buttons a {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 48em) {
+    /* ================================ */
+    /* NAV */
+    /* ================================ */
     .nav-menu__wrapper {
         display: none;
     }
@@ -32,6 +51,13 @@ Breakpoints:
 
     .bar {
         display: block;
+    }
+
+    /* ================================ */
+    /* HEADER */
+    /* ================================ */
+    .hero-buttons a {
+        margin: 0.4rem auto;
     }
 }
 
