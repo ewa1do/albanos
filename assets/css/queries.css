@@ -195,6 +195,13 @@ Breakpoints:
     .drink-menu__item {
         padding: 3rem 0;
     }
+
+    /* ================================== */
+    /* SECTION RESERVATIONS */
+    /* ================================== */
+    .reserv-form {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 40em) {
@@ -226,6 +233,15 @@ Breakpoints:
     }
 }
 
+@media only screen and (max-width: 33.75em) {
+    /* ================================== */
+    /* SECTION RESERVATIONS */
+    /* ================================== */
+    .reserv-form {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 31.25em) {
     /* ================================== */
     /* SECTION MENU */
@@ -245,5 +261,21 @@ Breakpoints:
     }
     .drink-title h4::after {
         top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 25em) {
+    /* ================================== */
+    /* SECTION RESERVATIONS */
+    /* ================================== */
+
+    .reserv-heading {
+        font-size: 3.2rem;
+    }
+    .reserv-heading:after {
+        top: 4.5rem;
+    }
+    .reserv-form {
+        width: 95%;
     }
 }

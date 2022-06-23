@@ -387,8 +387,7 @@ ul {
 /* ======================================================== */
 
 .section-reserv {
-    padding: 8rem 0;
-    /*  background-color: rgba(0,0,0,.7); */
+    /* padding: 4rem 0; */
     background: linear-gradient(
             to right,
             rgba(0, 0, 0, 0.7),
@@ -397,22 +396,26 @@ ul {
         url(../img/pizza.jpg);
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    /* height: 85vh; */
+}
+
+.reserv-container {
+    padding: 2rem 0;
 }
 
 .reserv-heading {
     padding-bottom: 3rem;
-    display: block;
-    margin-top: -2rem;
+    font-weight: 400;
 }
 
 .reserv-form {
-    margin-left: 25%;
-    border: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    margin: 0 auto;
+    border: 2px solid var(--white);
     padding: 2rem;
-    border-radius: 1%;
-    position: relative;
+    border-radius: 4px;
 }
 
 label {
@@ -443,22 +446,25 @@ input[placeholder] {
 }
 
 .btn-form {
-    border: 0;
-    padding: 0.6rem;
-    text-transform: uppercase;
-    font-family: inherit;
     background: transparent;
     border: 1px solid var(--white);
+    border-radius: 4px;
+    box-shadow: 0 5px 25px #111;
     color: var(--white);
     cursor: pointer;
+    font-family: inherit;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0.6rem;
+    text-transform: uppercase;
     transition: border 0.3s;
-    margin-left: 55rem;
-    position: absolute;
-    bottom: 8%;
+    width: 50%;
 }
 
 .btn-form:hover {
-    border: 1px solid rgba(var(--red-darker), 0.8);
+    border: 1px solid var(--white);
+    box-shadow: 0 5px 10px #111;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /* FOOTER */
