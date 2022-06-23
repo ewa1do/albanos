@@ -23,6 +23,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -387,7 +388,6 @@ ul {
 /* ======================================================== */
 
 .section-reserv {
-    /* padding: 4rem 0; */
     background: linear-gradient(
             to right,
             rgba(0, 0, 0, 0.7),
@@ -396,7 +396,6 @@ ul {
         url(../img/pizza.jpg);
     background-size: cover;
     background-position: center;
-    /* height: 85vh; */
 }
 
 .reserv-container {
@@ -474,23 +473,30 @@ input[placeholder] {
 
 .footer {
     background: rgba(0, 0, 0, 0.87);
-    padding: 4rem 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer span {
-    font-size: 1.4rem;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content span {
+    font-size: 1.6rem;
+    padding: 1rem 0;
     padding-left: 2rem;
 }
 
 .footer-links {
     width: 20%;
+    display: flex;
 }
 
 .footer-links li {
-    display: inline-block;
     font-size: 2.4rem;
     padding-left: 2rem;
-    padding-top: 2rem;
 }
 
 .footer-links a {
@@ -498,9 +504,5 @@ input[placeholder] {
 }
 
 .img-logo-big {
-    width: 25%;
-    display: block;
-    float: right;
-    margin-top: -7rem;
-    margin-right: 5rem;
+    width: 20%;
 }
